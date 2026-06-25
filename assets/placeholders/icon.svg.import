@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oclmk0ymx3f7"
-path="res://.godot/imported/passengers_placeholder.png-e4e4f4ee7ccf6caf63d0323e38dba3ec.ctex"
+uid="uid://cr4bcditu34ej"
+path="res://.godot/imported/icon.svg-2e567c5a88d0263b0c3a5cbb33860651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visual/passengers_placeholder.png"
-dest_files=["res://.godot/imported/passengers_placeholder.png-e4e4f4ee7ccf6caf63d0323e38dba3ec.ctex"]
+source_file="res://assets/placeholders/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-2e567c5a88d0263b0c3a5cbb33860651.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
