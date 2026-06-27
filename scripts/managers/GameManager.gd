@@ -1,10 +1,10 @@
 extends Node2D
 
-@onready var windshield_view: Node2D = $WindshieldView
-@onready var passenger_view: Node2D = $PassengerView
+@onready var windshield_view: Node2D = $ViewManager/WindshieldView
+@onready var passenger_view: Node2D = $ViewManager/PassengerView
 
-@onready var camera_1: Camera2D = $WindshieldView/Camera2D
-@onready var camera_2: Camera2D = $PassengerView/Camera2D
+@onready var camera_1: Camera2D = $ViewManager/WindshieldView/Camera2D
+@onready var camera_2: Camera2D = $ViewManager/PassengerView/Camera2D
 
 
 var show_windshield_view: bool = true
