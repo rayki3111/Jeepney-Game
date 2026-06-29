@@ -3,10 +3,6 @@
 [ext_resource type="Script" uid="uid://dxjjiashrwrx4" path="res://main/game/driver/driver_view.gd" id="1_ni8rb"]
 [ext_resource type="Texture2D" uid="uid://dbxlw2w50tib8" path="res://assets/placeholders/pixel_art_windshield.png" id="1_veopg"]
 
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ctd0"]
-bg_color = Color(0.4958614, 0.5499482, 1, 1)
-
 [node name="DriverView" type="Node2D" unique_id=356773611]
 script = ExtResource("1_ni8rb")
 metadata/_edit_vertical_guides_ = [-626.0]
@@ -24,16 +20,3 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="Button" type="Button" parent="UI" unique_id=2093134213]
-layout_mode = 0
-offset_left = -96.0
-offset_top = 201.0
-offset_right = 101.0
-offset_bottom = 306.0
-theme_override_font_sizes/font_size = 76
-theme_override_styles/normal = SubResource("StyleBoxFlat_6ctd0")
-text = "BACK"
-metadata/_edit_use_anchors_ = true
-
-[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

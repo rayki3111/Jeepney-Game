@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dk1wdlf4kpxlu"]
+
+[ext_resource type="Script" uid="uid://biaqr2whrf5dd" path="res://main/ui/game_menu.gd" id="1_vdw2e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwxg5"]
+bg_color = Color(0.4958614, 0.5499482, 1, 1)
+
+[node name="GameMenu" type="Control" unique_id=547347930]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vdw2e")
+
+[node name="Button" type="Button" parent="." unique_id=1921817485]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -98.5
+offset_top = -188.0
+offset_right = 98.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 76
+theme_override_styles/normal = SubResource("StyleBoxFlat_rwxg5")
+text = "BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
