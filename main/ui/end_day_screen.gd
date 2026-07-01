@@ -1,12 +1,10 @@
 extends Control
 
-signal change_view(current_view: String)
-signal pause_game
-@onready var progress_bar: ProgressBar = $ProgressBar
+signal next_day(day_number: int)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	progress_bar.value = GameManager.stress_level
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -15,8 +13,9 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	change_view.emit(GameManager.current_view)
+	GameManager.day += 1
+	next_day.emit()
 
 
-func _on_pause_button_pressed() -> void:
-	pause_game.emit()
+func _on_menu_pressed() -> void:
+	GameManager.back_to_main_menu.emit(self)

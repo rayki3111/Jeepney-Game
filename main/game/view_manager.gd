@@ -5,8 +5,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
-	#driver_view.make_current()
+	driver_view.make_current()
 	#$DriverView.change_view.connect(switch_view)
 	#$PassengerView.change_view.connect(switch_view)
 
